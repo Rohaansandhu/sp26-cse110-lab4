@@ -1,11 +1,50 @@
-function sumValues(a, b, add) {
-    if (add) {
-        const result = 0;
-        result = a + b;
-        console.log(result);
-    } else return;
+// function discountPrices(prices, discount) {
+//     const discounted = [];
+//     const length = prices.length;
 
-    console.log("final result: " + result);
+//     for (let i = 0; i < length; i++) {
+//         const discountedPrice = prices[i] * (1 - discount);
+//         discounted.push(discountedPrice);
+//     }
+
+//     // console.log(i);
+//     console.log(length);
+//     return discounted;
+// }
+// console.log(discountPrices([100, 200, 300], 0.5));
+
+
+// let student = {
+//     name: "Cindy",
+//     major: "Computer Science",
+//     'Grad Year': '2022',
+//     greeting: function() {
+//         console.log("Hello!");
+//     },
+//     'Favorite Teacher': {
+//         name: "Thomas Powell",
+//         course: "CSE 110"
+//     },
+//     courseLoad: ["CSE 110", "CSE 134", "VIS 41"]
+// };
+
+// console.log(student.name);
+// console.log(student['Grad Year']);
+// student.greeting();
+// console.log(student['Favorite Teacher'].name);
+// console.log(student.courseLoad[0]);
+
+
+function modifyArray(array, callback) {
+    const newArr = [];
+    for (let i = 0; i < array.length; i++) {
+        newArr.push(callback(array[i]));
+    }
+    return newArr;
 }
 
-sumValues(10, 10, true);
+function doSomething(num) {
+    return num * 2;
+}
+
+console.log(modifyArray([1, 2, 3], doSomething));
