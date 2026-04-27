@@ -123,3 +123,12 @@ see code in part2-question16.js
 ## 17.
 
 The function should return [2, 4, 6]. Basically, we are iterating through the array in the first function, and for every item in the original array, we call callback, which just multiplies the number by 2. Then we store that value in the new array. When we return that new array, it gives us the original array multiplied by 2.
+
+## 18.
+
+see code in part2-question18.js. Used toTimeString() for current time and setInterval to print every second.
+
+## 19.
+
+The function prints out 1, 4, 3, and 2. (All on new lines). The final 2 appears after a bit of a delay (because of the 1000 delay in setTimeout())
+
